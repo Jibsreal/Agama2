@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisi-Kisi PAS PAI SMP 2025/2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2196f3;
+        }
+
+        .info-box h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .subject-section {
+            margin: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .subject-title {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        .question-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #4CAF50;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .question-number {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .question-type {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .type-pg {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #4caf50;
+        }
+
+        .type-isian {
+            background: #fff3e0;
+            color: #ef6c00;
+            border: 1px solid #ff9800;
+        }
+
+        .type-esai {
+            background: #fce4ec;
+            color: #c2185b;
+            border: 1px solid #e91e63;
+        }
+
+        .materi-badge {
+            background: #673ab7;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .indicator {
+            background: #e8eaf6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #3f51b5;
+        }
+
+        .indicator strong {
+            color: #283593;
+        }
+
+        .explanation {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 4px solid #689f38;
+        }
+
+        .explanation strong {
+            color: #33691e;
+        }
+
+        .tips-box {
+            background: #e0f2f1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 4px solid #009688;
+        }
+
+        .tips-box strong {
+            color: #00695c;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .question-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .question-type {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Kisi-Kisi PAS Pendidikan Agama Islam</h1>
+            <p>SMP - Kurikulum Merdeka - Semester 1 Tahun 2025/2026</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">⏱ 60 Menit | 35 Soal (25 PG + 10 Isian/Esai)</p>
+        </header>
+
+        <div class="info-box">
+            <h3>🎯 Cara Membaca Kisi-Kisi Ini:</h3>
+            <p>Setiap nomor soal memiliki <strong>indikator</strong> (kompetensi yang diuji) dan <strong>penjelasan detail</strong> untuk memudahkan pemahaman. Cek jenis soal (PG/Isian/Esai) agar bisa mempersiapkan strategi menjawab yang tepat. Fokus pada materi utama: <strong>Kurban & Akikah, Zakat, dan Peradaban Turki Utsmani (Al-Fatih)</strong>.</p>
+        </div>
+
+        <!-- BAGIAN 1: KURBAN & AKIKAH -->
+        <div class="subject-section">
+            <div class="subject-title">🐐 Materi: Kurban & Akikah (Nomor 1-9)</div>
+            <div class="question-grid">
+                
+                <!-- Nomor 1 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 1</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Ketentuan Kurban</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui dalil perintah berkurban (ayat & hadits).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Kamu harus menghafal ayat Al-Qur'an surat Al-Kautsar ayat 2 ("Maka sembahlah Tuhanmu dan berkurbanlah") serta hadits Shahih Bukhari tentang perintah berkurban. Pahami konteks turunnya ayat dan keutamaan berkurban.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan minimal 1 ayat dan 1 hadits tentang perintah kurban. Perhatikan kata kunci "berkurban" dalam teks Arab.
+                    </div>
+                </div>
+
+                <!-- Nomor 2 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 2</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Hukum Kurban</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui hukum berkurban (wajib atau sunnah).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Kurban adalah <strong>sunnah mu'akkadah</strong> (sunnah yang sangat dianjurkan) bagi yang mampu. Bukan wajib, tapi sangat ditekankan. Pahami perbedaan pendapat ulama dan kriteria "mampu" (punya kelebihan harta setelah memenuhi kebutuhan dasar).
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat! Jawaban standar di SMP: <strong>SUNNAH MU'AKKADAH</strong>. Siapkan contoh situasi seseorang yang wajib/wajib tidak kurban.
+                    </div>
+                </div>
+
+                <!-- Nomor 3 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 3</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Hewan Kurban & Akikah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui jenis hewan yang boleh dikurbankan/akikahkan.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Untuk kurban: <strong>Unta, Sapi/Kerbau, Kambing/Domba</strong>. Usia minimal: Unta 5 tahun, Sapi 2 tahun, Kambing 1 tahun. Tidak cacat, tidak kurus, dan bisa berjalan. Untuk akikah: Kambing/domba (1 ekor untuk anak perempuan, 2 ekor untuk anak laki-laki).
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan 3 jenis hewan dan syarat minimal usianya. Perhatikan perbedaan jumlah akikah laki-laki vs perempuan!
+                    </div>
+                </div>
+
+                <!-- Nomor 4 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 4</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Tata Cara Penyembelihan</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui tata cara penyembelihan hewan kurban & akikah.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Harus <strong>tegak menghadap kiblat</strong>, katakan "Bismillah, Allahu Akbar", gunakan pisau tajam, potong kerongkongan & pembuluh darah (metode zabiha). Pelajarkan do'a sebelum dan sesudah penyembelihan. Pahami larangan menyembelih dengan cara menyakiti hewan.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat 3 kata kunci: <strong>Kiblat, Bismillah, Pisau Tajam</strong>. Pahami makna "halal dan thayyiban" dalam penyembelihan.
+                    </div>
+                </div>
+
+                <!-- Nomor 5 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 5</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Pembagian Daging Kurban</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui porsi pembagian daging kurban.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Daging kurban dibagi <strong>3 bagian</strong>: <strong>1/3 untuk fakir miskin, 1/3 untuk keluarga, 1/3 boleh diberikan kepada siapa saja (termasuk non-muslim)</strong>. Pahami kebolehan makan daging kurban sendiri dan tidak wajib disedekahkan semua.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan rumus <strong>3×1/3</strong>. Pahami bedanya dengan infaq/sadaqah biasa. Siapkan contoh perhitungan sederhana.
+                    </div>
+                </div>
+
+                <!-- Nomor 6 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 6</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Ketentuan Kurban Lanjutan</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui waktu pelaksanaan kurban (harus/ boleh ditunda).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Waktu kurban: <strong>Mulai solat Idul Adha hingga akhir hari tasyrik (12 Dzulhijjah)</strong>. Disunnahkan pada hari pertama (10 Dzulhijjah). Pahami hukum menunda kurban setelah waktu tersebut.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat rentang waktu: <strong>10, 11, 12 Dzulhijjah</strong>. Tidak boleh sebelum Idul Adha dan tidak boleh setelah tasyrik.
+                    </div>
+                </div>
+
+                <!-- Nomor 7 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 7</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Ketentuan Akikah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui tata cara akikah (waktu, niat, dll).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Akikah dilakukan pada <strong>hari ke-7 kelahiran</strong> (disunnahkan). Jika tidak sanggup, bisa di hari ke-14 atau ke-21. Niat: "Aku menyembelih akikah untuk anakku [...] karena Allah". Bisa mencukur rambut bayi dan memberikan pemberian kepada orang miskin.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat angka <strong>7-14-21</strong> untuk waktu akikah. Pahami akikah adalah syiar agama, bukan hanya tradisi.
+                    </div>
+                </div>
+
+                <!-- Nomor 8 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 8</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Hukum Akikah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui hukum akikah (sunnah/wajib).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Akikah adalah <strong>sunnah mu'akkadah</strong> (sangat dianjurkan) untuk orang tua yang mampu. Bukan kewajiban, tapi ibu bapak yang tidak melakukannya tidak berdosa, namun kehilangan pahala besar. Pahami perbedaan dengan kurban.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Jawaban: <strong>SUNNAH MU'AKKADAH</strong>. Siapkan contoh situasi keluarga yang tidak mampu akikah.
+                    </div>
+                </div>
+
+                <!-- Nomor 9 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 9</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Makna Taqarrub</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui makna "taqarrub" dalam konteks kurban.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> <strong>Taqarrub</strong> artinya <strong>"mendekatkan diri kepada Allah"</strong> melalui amal shaleh. Kurban adalah sarana taqarrub karena mengorbankan harta untuk-Nya, mengikhlaskan niat, dan menolong fakir miskin. Pahami spirit spiritual kurban, bukan sekadar ritual.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Jawaban harus ada kata <strong>"mendekatkan diri kepada Allah"</strong>. Tambahkan contoh amal lain yang termasuk taqarrub.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BAGIAN 2: ZAKAT -->
+        <div class="subject-section">
+            <div class="subject-title">💰 Materi: Zakat Fitrah & Zakat Mal (Nomor 10-17, 31, 34-35)</div>
+            <div class="question-grid">
+                
+                <!-- Nomor 10 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 10</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Makna Zakat</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa memahami pengertian zakat secara bahasa & syariat.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Secara bahasa: <strong>"Suci, bersih, berkah"</strong>. Secara syariat: <strong>Bagian tertentu dari harta yang wajib dikeluarkan untuk diberikan kepada 8 asnaf</strong> (fakir, miskin, amil, dll). Pahami tujuan: membersihkan harta, menolong mustahik, mendekatkan diri kepada Allah.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan 2 definisi (bahasa & syariat) dan 3 tujuan utama. Ingat arti kata "zaka" = tumbuh & bersih.
+                    </div>
+                </div>
+
+                <!-- Nomor 11 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 11</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Macam-Macam Zakat</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui klasifikasi zakat berdasarkan waktu & harta.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Berdasarkan waktu: <strong>Zakat Fitrah (setahun sekali, Idul Fitri) & Zakat Mal (setiap mencapai nisob)</strong>. Berdasarkan harta: Zakat Profesi, Zakat Pertanian, Zakat Emas/Perak, Zakat Perdagangan, Zakat Ternak. Pahami perbedaan utama fitrah vs mal.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Fokus pada <strong>Zakat Fitrah & Zakat Mal</strong> (paling sering diujikan). Hafalkan 2-3 contoh zakat lainnya.
+                    </div>
+                </div>
+
+                <!-- Nomor 12 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 12</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Dalil Zakat</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui ayat Al-Qur'an tentang wajibnya zakat.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Hafalkan <strong>Surat Al-Baqarah ayat 43, 110, 177</strong> dan surat At-Taubah ayat 103. Perhatikan kata "aqimis-solah wa atuz-zakah". Pahami konteks ayat dan bahwa zakat adalah rukun Islam ke-3.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Minimal hafalkan 1 ayat lengkap dan suratnya. Perhatikan kata kunci "zakah" dalam teks Arab.
+                    </div>
+                </div>
+
+                <!-- Nomor 13 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 13</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Dalil Zakat Fitrah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui hadits tentang zakat fitrah.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Hadits riwayat <strong>Ibnu Abbas</strong>: "Rasulullah ﷺ wajibkan zakat fitrah sebagai pembersih bagi orang yang berpuasa dari hal-hal yang tidak berguna dan sebagai makanan orang miskin". Pahami tujuan: menyucikan puasa & menolong fakir miskin.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan sanad hadits (Ibnu Abbas) dan tujuan fitrah. Pahami bedanya zakat fitrah zakat mal.
+                    </div>
+                </div>
+
+                <!-- Nomor 14 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 14</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Besaran Zakat Fitrah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui takaran zakat fitrah dalam satuan makanan.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> <strong>1 Sha' = 2,5 kg (4 genggam) pokok makanan</strong> (beras, gandum, kurma, atau kismis). Satu sha' untuk setiap jiwa (diri, istri, anak, orang tua yang ditanggung). Pahami boleh mengganti dengan uang senilai makanan.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>4 genggam = 2,5 kg</strong>. Pahami 4 jenis makanan yang diizinkan. Siapkan contoh perhitungan untuk keluarga 4 orang.
+                    </div>
+                </div>
+
+                <!-- Nomor 15 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 15</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Ketentuan Zakat Mal</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa memahami syarat wajib zakat mal (nisab & haul).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Syarat: <strong>Nisab (jumlah minimum harta)</strong> dan <strong>Haul (genap 1 tahun kepemilikan)</strong>. Nisab emas: 85 gram, nisab perak: 595 gram, nisab uang: senilai nisab emas. Harta harus milik penuh dan melebihi kebutuhan dasar.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Fokus pada <strong>2 syarat utama</strong>. Hafalkan angka nisab emas (85 gram). Pahami konsep "harta produktif" vs "harta pokok".
+                    </div>
+                </div>
+
+                <!-- Nomor 16 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 16</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Dalil Zakat Mal</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui ayat tentang zakat mal.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> <strong>Surat At-Taubah ayat 103</strong>: "Ambillah zakat dari sebagian harta mereka, dengan zakat itu kamu membersihkan dan mensucikan mereka". Pahami bahwa zakat mal mencakup berbagai jenis harta dan bersifat wajib jika mencapai nisab.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan ayat 103 Surat At-Taubah dan artinya. Pahami kata "shadaqah" di sini artinya zakat.
+                    </div>
+                </div>
+
+                <!-- Nomor 17 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 17</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Besaran Zakat Mal</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui persentase zakat mal yang wajib dikeluarkan.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> <strong>2,5% (1/40) dari harta yang mencapai nisab</strong>. Perhitungan: (Jumlah harta – hutang – kebutuhan dasar) × 2,5%. Untuk pertanian: 5-10% (tergantung irigasi). Pahami cara hitung sederhana.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>2,5%</strong>. Siapkan contoh hitungan: Rp 10.000.000 × 2,5% = Rp 250.000. Pahami bedanya zakat pertanian.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BAGIAN 3: PERADABAN TURKI UTSMANI -->
+        <div class="subject-section">
+            <div class="subject-title">🏰 Materi: Peradaban Turki Utsmani & Muhammad Al-Fatih (Nomor 18-25, 27-30, 33)</div>
+            <div class="question-grid">
+                
+                <!-- Nomor 18 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 18</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Konstantinopel</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui kondisi geografis & strategis Konstantinopel.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Konstantinopel (sekarang Istanbul) adalah ibukota Byzantium, terletak di <strong>persimpangan jalan Eropa-Asia</strong>, di <strong>Selat Bosporus</strong>. Dikelilingi laut di 3 sisi dan tembok pertahanan kuat (tembus kaca). Dikenal sebagai kota yang "tidak bisa dikuasai".
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat <strong>3 sisi laut + tembok kuat</strong>. Pahami kenapa kota ini sangat strategis (jembatan perdagangan & militer).
+                    </div>
+                </div>
+
+                <!-- Nomor 19 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 19</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Tokoh Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui nama lengkap & gelar Muhammad Al-Fatih.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> <strong>Sultan Muhammad bin Murad Khan</strong>, dikenal dengan gelar <strong>Al-Fatih</strong> (Sang Penakluk). Lahir 29 Maret 1432, naik tahta 1451, wafat 1481. Pahami gelar ini diberikan setelah menaklukkan Konstantinopel (1453).
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>Muhammad bin Murad Khan</strong>. Ingat angka penting: <strong>1453 (tahun penaklukan)</strong>.
+                    </div>
+                </div>
+
+                <!-- Nomor 20 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 20</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Akhlak Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui contoh akhlak mulia Al-Fatih.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Al-Fatih memiliki <strong>akhlak: disiplin, bijaksana, sabar, adil, tawakal, tekun belajar</strong>. Contoh: ia mempelajari strategi militer dari usia muda, menghormati guru, dan tidak sombong. Pahami integrasi iman dan ilmu dalam kehidupannya.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat <strong>5 akhlak utama</strong>. Siapkan contoh nyata dari kehidupannya. Kaitkan dengan akhlak Islam.
+                    </div>
+                </div>
+
+                <!-- Nomor 21 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 21</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Proses Penaklukan</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui urutan peristiwa penaklukan Konstantinopel.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Rangkaian: <strong>1) Persiapan alat (meriam besar "Basyarah"), 2) Pengiriman ultimatum, 3) Pengepungan 53 hari, 4) Pembangunan jembatan darat di Galata, 5) Serangan akhir 29 Mei 1453, 6) Masuknya pasukan melalui gerbang Kerkoporta</strong>. Pahami peran strategi Al-Fatih.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>53 hari pengepungan</strong> dan <strong>29 Mei 1453</strong>. Ingat nama meriam: Basyarah.
+                    </div>
+                </div>
+
+                <!-- Nomor 22 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 22</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Bantuan Kaisar</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui bantuan dari Kaisar Byzantium (kepada siapa meminta bantuan).
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Kaisar Konstantinos XI meminta bantuan kepada <strong>Negara-negara Eropa (Paus Roma, Venesia, Genoa)</strong>. Hanya sedikit yang datang (600 tentara Genoa dibawah Giovanni Giustiniani). Pahami ketidakpedulian Eropa terhadap Byzantium.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat <strong>Paus Roma & Venesia</strong>. Pahami konflik Gereja Timur-Barat yang menghambat bantuan.
+                    </div>
+                </div>
+
+                <!-- Nomor 23 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 23</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Timeline Penaklukan</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui waktu kedatangan pasukan Al-Fatih di Konstantinopel.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Pasukan Al-Fatih tiba dan memulai pengepungan pada <strong>6 April 1453</strong>. Penyerangan akhir terjadi pada <strong>29 Mei 1453 (Selasa, 20 Jumadil Akhir 857 H)</strong>. Pahami hitungan kalender Masehi-Hijriah.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>6 April 1453 (mulai) & 29 Mei 1453 (akhir)</strong>. Hitung selisih: 53 hari.
+                    </div>
+                </div>
+
+                <!-- Nomor 24 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 24</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Jumlah Tentara</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui perkiraan jumlah pasukan Al-Fatih vs Byzantium.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Pasukan Al-Fatih: <strong>80.000-100.000 tentara + 300 kapal</strong>. Pasukan Byzantium: <strong>7.000-10.000 tentara + 26 kapal</strong>. Pahami superioritas kuantitatif Al-Fatih, tapi kualitas pertahanan Byzantium sangat kuat (tembok).
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Ingat <strong>80.000 vs 7.000</strong> (perbandingan 10:1). Pahami bahwa jumlah bukan satu-satunya faktor kemenangan.
+                    </div>
+                </div>
+
+                <!-- Nomor 25 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 25</span>
+                        <span class="question-type type-pg">Pilihan Ganda</span>
+                    </div>
+                    <span class="materi-badge">Materi: Strategi Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui strategi kreatif Al-Fatih dalam penaklukan.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Strategi: <strong>1) Meriam besar Basyarah (penggabungan meriam kecil jadi besar), 2) Jembatan darat di teluk Galata (menggeser kapal dari darat), 3) Terowongan bawah tanah, 4) Psikologi perang (ultimatum, intimidasi)</strong>. Pahami inovasi teknologi militer Al-Fatih.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Fokus pada <strong>2 strategi unik: Meriam Basyarah & Jembatan Galata</strong>. Pahami perpaduan kekuatan militer & diplomasi.
+                    </div>
+                </div>
+
+                <!-- Nomor 26 & 27 (Mungkin typo di gambar, saya gabungkan) -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 26-27</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Ayat tentang Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui ayat Al-Qur'an & hadits yang dijadikan do'a Al-Fatih.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Ayat yang sering dibaca Al-Fatih: <strong>Surat Ar-Rum ayat 2-4</strong> (Allah menjanjikan kemenangan bagi orang mukmin). Hadits: <strong>"Konstantinopel pasti akan ditaklukkan oleh tentara terbaik dan pemimpin terbaik"</strong> (HR. Ahmad). Pahami inspirasi spiritual Al-Fatih.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>Surat Ar-Rum ayat 2</strong> dan esensi hadits. Pahami kaitan iman & strategi militer.
+                    </div>
+                </div>
+
+                <!-- Nomor 28 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 28</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Kontribusi Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa mengetahui dampak penaklukan Konstantinopel bagi perkembangan Islam.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Dampak: <strong>1) Ekspansi Islam ke Eropa, 2) Ibu kota Khilafah Utsmaniyah pindah ke Istanbul, 3) Jembatan perdagangan & budaya, 4) Inspirasi generasi penerus</strong>. Konstantinopel diubah jadi Istanbul, masjid Hagia Sophia dibangun. Pahami peradaban Islam mengalami golden age.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Hafalkan <strong>3 dampak</strong>. Ingat perubahan nama: Konstantinopel → Istanbul.
+                    </div>
+                </div>
+
+                <!-- Nomor 29 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 29</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Kepribadian Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa menyebutkan 3-5 karakter positif Al-Fatih.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Karakter: <strong>1) Disiplin tinggi, 2) Cinta ilmu (bahasa, strategi, agama), 3) Pemimpin adil, 4) Sabar & tawakal, 5) Visioner & inovatif</strong>. Pahami ia belajar 7 bahasa dan ahli dalam berbagai bidang. Kaitkan dengan akhlakul karimah.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Pilih <strong>3 karakter yang paling kuat</strong> dan berikan contoh nyata dari hidupnya. Susun jawaban rapi.
+                    </div>
+                </div>
+
+                <!-- Nomor 30 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 30</span>
+                        <span class="question-type type-isian">Isian Singkat</span>
+                    </div>
+                    <span class="materi-badge">Materi: Nilai Islam Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Siswa menjelaskan bagaimana iman Al-Fatih mendorong prestasinya.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Iman Al-Fatih membuatnya: <strong>1) Yakin janji Allah (kemenangan), 2) Bertawakal & berdo'a sebelum berencana, 3) Adil dalam memerintah, 4) Tidak sombong dengan kemenangan, 5) Menggunakan ilmu untuk agama</strong>. Pahami integrasi iman & amal shaleh.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Jawab dengan <strong>keterkaitan sebab-akibat</strong>: Iman → Tawakal → Strategi → Kemenangan → Keadilan.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BAGIAN 4: SOAL ESAI/ STUDI KASUS -->
+        <div class="subject-section">
+            <div class="subject-title">📝 Materi: Soal Esai & Studi Kasus (Nomor 31-35)</div>
+            <div class="question-grid">
+                
+                <!-- Nomor 31 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 31</span>
+                        <span class="question-type type-esai">Esai</span>
+                    </div>
+                    <span class="materi-badge">Studi Kasus: Zakat Fitrah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Analisis kasus keluarga yang menunaikan zakat fitrah.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Soal akan memberikan <strong>narasi keluarga (jumlah anggota, penghasilan, harta)</strong>. Tugas: <strong>1) Hitung jumlah jiwa, 2) Tentukan takaran (2,5 kg/jiwa), 3) Pilih jenis makanan, 4) Tentukan waktu (sebelum shalat Id), 5) Tentukan mustahik (8 asnaf)</strong>. Pahami perhitungan praktis.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Kerjakan dengan <strong>langkah-langkah jelas</strong>. Tulis rumus: Jiwa × 2,5 kg = Total. Sebutkan contoh mustahik di lingkungan sekolah.
+                    </div>
+                </div>
+
+                <!-- Nomor 32 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 32</span>
+                        <span class="question-type type-esai">Esai</span>
+                    </div>
+                    <span class="materi-badge">Studi Kasus: Zakat Mal</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Analisis perhitungan zakat mal untuk pedagang/usahawan.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Soal akan berisi <strong>modal usaha, laba, hutang, kebutuhan dasar</strong>. Tugas: <strong>1) Hitung harta kena zakat (modal + laba – hutang – kebutuhan), 2) Cek nisab (≥85 gram emas), 3) Hitung 2,5% zakat, 4) Tentukan mustahik, 5) Jelaskan manfaat zakat bagi ekonomi</strong>. Pahami contoh perhitungan realistis.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Buat <strong>tabel perhitungan</strong> jika perlu. Jelaskan setiap langkah. Kaitkan dengan keadilan sosial.
+                    </div>
+                </div>
+
+                <!-- Nomor 33 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 33</span>
+                        <span class="question-type type-esai">Esai</span>
+                    </div>
+                    <span class="materi-badge">Studi Kasus: Tokoh Al-Fatih</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Buktikan bahwa Al-Fatih adalah pemimpin bertakwa & visioner.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Bukti: <strong>1) Hafal Al-Qur'an & hadits tentang Konstantinopel, 2) Berdo'a sebelum & sesudah perang, 3) Menepati janji (tidak membunuh warga), 4) Mengubah Hagia Sophia jadi masjid, 5) Membangun madrasah & perpustakaan, 6) Adil dalam tata kelola kota</strong>. Pahami integrasi iman & kepemimpinan.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Susun jawaban dengan <strong>poin-poin kuat</strong> dan berikan contoh spesifik dari sumber sejarah. Kaitkan dengan surah Ar-Rum ayat 2-4.
+                    </div>
+                </div>
+
+                <!-- Nomor 34 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 34</span>
+                        <span class="question-type type-esai">Esai</span>
+                    </div>
+                    <span class="materi-badge">Studi Kasus: Penyebaran Islam di Nusantara</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Sebutkan para tokoh penyebar Islam di Nusantara.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Tokoh: <strong>1) Wali Songo (Sunan Giri, Sunan Ampel, Sunan Kalijaga, dll), 2) Sultan-sultan (Sultan Malikussaleh, Sultan Trenggono), 3) Ulama (Syekh Yusuf Al-Makassari, Syekh Nuruddin Ar-Raniry), 4) Pedagang Gujarat & Parsi, 5) Para mubaligh dari Arab</strong>. Pahami metode dakwah mereka (kultural, ekonomi, pendidikan).
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Minimal sebutkan <strong>3 Wali Songo + 1 Sultan + 1 Ulama</strong>. Jelaskan metode dakwah masing-masing (kultural vs langsung).
+                    </div>
+                </div>
+
+                <!-- Nomor 35 -->
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">No. 35</span>
+                        <span class="question-type type-esai">Esai</span>
+                    </div>
+                    <span class="materi-badge">Studi Kasus: Nilai Dakwah</span>
+                    <div class="indicator">
+                        <strong>Indikator:</strong> Jelaskan metode dakwah yang efektif di era modern.
+                    </div>
+                    <div class="explanation">
+                        <strong>Penjelasan:</strong> Metode: <strong>1) Pendidikan (madrasah, pesantren), 2) Ekonomi (baitul maal, koperasi), 3) Sosial-budaya (seni, tradisi), 4) Media digital (sosial media, konten), 5) Perilaku (akhlak mulia)</strong>. Kaitkan dengan metode Wali Songo yang adaptif. Pahami dakwah harus bijaksana & santun.
+                    </div>
+                    <div class="tips-box">
+                        <strong>Tips:</strong> Berikan <strong>contoh konkret</strong> di lingkungan sekolah/kampung. Kaitkan dengan ayat surah An-Nahl ayat 125 ("serulah dengan cara yang terbaik").
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>🌟 Semoga membantu persiapanmu! Jangan lupa: <strong>TAQARRUB → TAQWA → TRIUMPH!</strong></p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Dicetak otomatis dari Kisi-Kisi PAS PAI SMP 2025/2026</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Script untuk interaktivitas ringan
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll untuk card
+            const cards = document.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                // Animate on scroll
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.style.transition = 'opacity 0.5s, transform 0.5s';
+                                entry.target.style.opacity = '1';
+                                entry.target.style.transform = 'translateY(0)';
+                            }, index * 100);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                observer.observe(card);
+            });
+
+            // Tooltip saat hover
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeftColor = '#e74c3c';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeftColor = '#4CAF50';
+                });
+            });
+
+            // Highlight materi badge when clicked
+            const badges = document.querySelectorAll('.materi-badge');
+            badges.forEach(badge => {
+                badge.addEventListener('click', function() {
+                    this.style.background = '#e74c3c';
+                    this.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        this.style.background = '#673ab7';
+                        this.style.transform = 'scale(1)';
+                    }, 300);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
